@@ -1,0 +1,100 @@
+﻿#gad {
+  font-family: 'Open Sans', cursive;
+  text-indent: 0px;
+  text-indent: 1em;
+}
+
+#gad li {
+  float: left;
+  /* все ссылки идут слева на право */
+  position: relative;
+  list-style: none;
+  /* убираем точки */
+  background: ;
+  width: 190px;
+  height: px;
+}
+
+#gad a {
+  text-decoration: none;
+  display: block;
+  /* делаем блочным элементов тег "a" */
+  padding: 15px 47px;
+  color: white;
+}
+
+#active a, #gad li:hover>a {
+  background-color: rgba(156, 5, 5, 0.5);
+}
+
+#gad ul {
+  visibility: hidden;
+  /* скрываем выпадающее меню */
+  padding: 0;
+  position: absolute;
+}
+
+#gad li:hover>ul {
+  visibility: visible;
+  /* показываем выпадающее меню при наведении */
+  position: relative;
+}
+
+#gad ul a {
+  padding: 15px 15px;
+  /* делаем отступы выпадающего меню меньше от основного */
+}
+
+#gad ul li:hover {
+  background-color: red;
+}
+
+#gad li:first-child:hover>ul {
+  left: 0px;
+  /* при наведении на первый элемент чтобы не съежало выпадающее меню */
+}
+
+#gad>li {
+  border-right: 2px solid red;
+  /* добавляем рамку к основному меню справа */
+}
+
+#gad>li:last-child {
+  border-right: none;
+  /* убираем рамку справа основного меню */
+}
+
+#gad>li ul li {
+  border-left: 2px solid red;
+  /* добавляем рамку к выпадающему меню слева */
+  border-right: 2px solid red;
+  /* добавляем рамку к выпадающему меню справа */
+}
+
+#gad li:first-child ul li, #gad li:first-child ul {
+  border-left: none;
+  /* убираем рамку у выпадающего меню слева */
+}
+
+#gad li:last-child ul li, #gad li:last-child ul {
+  border-right: none;
+  /* убираем рамку у выпадающего меню справа */
+}
+
+#gad li:hover>ul {
+  left: -2px;
+  /* смещаем выпадающее меню слева от размера рамки*/
+}
+
+.god {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 1800px;
+  margin-left: 120px;
+  z-index: 99;
+}
+
+#gad > li {
+	background-color: red;
+}
